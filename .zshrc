@@ -173,7 +173,7 @@ setopt NO_prompt_subst
 
 function zle-line-init zle-keymap-select {
     PROMPT="%{$fg_bold[green]%}${CONDA_PROMPT_MODIFIER}"
-    PROMPT+="%{$fg[yellow]%}%c%{$reset_color%} $(git_prompt_info)"
+    PROMPT+="%{$fg[white]%}%c%{$reset_color%} $(git_prompt_info)"
     case $KEYMAP in
       vicmd) PROMPT+="%{$fg_bold[cyan]%}➜ ";;
       viins|main) PROMPT+="%{$fg_bold[red]%}➜ ";; 
